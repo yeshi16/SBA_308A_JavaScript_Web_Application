@@ -24,6 +24,7 @@
     </div>
 
     <script>
+     
      const herokuapp ='http://cors-anywhere.herokuapp.com/'
      document
     .getElementById("myBtn")
@@ -56,6 +57,7 @@ async function alertResponse(response) {
         const textData = await response.json();
         console.log(textData);
         // alert(textData)
+       
     } else {
         alert("The request returned a status other than 200 OK: " + response.status);
     }
@@ -79,6 +81,8 @@ async function alertResponse(response) {
 // }
 
 // }
+
+
 </script>
 </body>
 </html>

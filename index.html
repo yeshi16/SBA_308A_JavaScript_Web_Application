@@ -27,55 +27,82 @@
           <li class="nav-item dropdown ">
             <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              Genre
+              Fruit List
             </a>
-            <ul class="dropdown-menu ">
-              <li><a class="dropdown-item text-primary" href="#">Action</a></li>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <!-- <li><a class="dropdown-item text-primary" href="#">Action</a></li>
               <li><a class="dropdown-item text-primary" href="#">Drama</a></li>
               <li><a class="dropdown-item text-primary" href="#">Comedy</a></li>
-              <li><a class="dropdown-item text-primary" href="#">Romance</a></li>
+              <li><a class="dropdown-item text-primary" href="#">Romance</a></li> -->
             </ul>
           </li>
       </div>
     </nav>
   </div>
-
-  <!-- search bar -->
-  <!-- <div class="container">
-    <div class="row g-3">
-      <div class="col-1">
-        <label for="search" class="col-form-label text-primary fs-3">Search</label>
+  
+  <div id="mainMovie" class="container">
+    <!-- introduction -->
+    <div class="card text-center">
+        <div class="card-header">
+          <!-- Featured -->
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Botanical Classification and Nutritional Value of Fruits</h5>
+          <p class="card-text">
+            Each fruit in the list is represented by several descriptive 
+            properties, providing a comprehensive understanding of its 
+            botanical classification, nutritional value, and characteristics. 
+            The name of the fruit serves as the primary identifier, while the 
+            family it belongs to groups it with other similar fruits and plants 
+            in botanical taxonomy. Understanding the family of a fruit can 
+            provide insights into its evolutionary history and botanical relationships. 
+            Additionally, the genus classification further refines the botanical 
+            categorization, grouping the fruit with closely related species. 
+            Knowledge about the nutrition of each fruit.  Nutritional information such as calories,
+            fat, sugar, carbohydrates, and protein. It is also vital, as it can 
+            vary significantly and play a crucial role in maintaining a balanced 
+            diet. 
+           
+            provided below is list of fruits that includes family, order and genus. 
+            To filter by family, order or genus select below.  
+            To see nutrient list of a fruit select from dropdown.
+            </p>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
+            <button id="family" class="btn btn-primary" type="button">Filter by Family</button>
+            <button id="order" class="btn btn-primary" type="button">Filter by Order</button>
+            <button id="genus" class="btn btn-primary" type="button">Filter by Genus</button>
+          </div>
+        </div>
+        <div class="card-footer text-body-secondary fw-bold">
+          <!-- Fruit List -->
+        </div>
       </div>
-      <div class="col-11">
-        <input id="search" type="text" placeholder="Search a movie"
-          class="form-control border border-primary border-5 bg-primary-subtle ">
-      </div>
-    </div>
-  </div> -->
 
-  <div id="mainMovie">
-    <button id="btn">press</button>
+      <div class="accordion accordion-flush" id="accordionFlush">
+        <!-- <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div> -->
+      </div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script type="module" src="./JS/script.js"></script>
-    <!-- <script src="./MODULE/api.js"></script> -->
+    <!-- <script type="module" src="./JS/script.js"></script> -->
+    <script src="./JS/script.js"></script>
 </body>
 <footer>
-    <div class="container-fluid mp-4 pt-3 bg-primary-subtle text-center">
-      <div class="row pb-2">
-        <div class="col">
-          contact us: 123 watch st.
-        </div>
-        <div class="col">
-          © 2024 Your Website. All Rights Reserved.
-        </div>
-        <div class="col">
-          follow us on <i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-square-instagram"></i>
-        </div>
-      </div>
-    </div>
-  </footer>
+    Data provided by Fruityvice API (https://www.fruityvice.com/), 
+    a free API for retrieving information about various fruits. 
+    Powered by Fruityvice.
+</footer>
   
 </html>
