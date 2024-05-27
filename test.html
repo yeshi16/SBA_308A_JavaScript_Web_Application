@@ -33,8 +33,15 @@ async function testRequest() {
 	let inputVal = document.getElementById("myInput").value;
     let requestBody = { data: inputVal };
 
-    const response = await fetch(`${herokuapp}https://www.omdbapi.com/?i=tt3896198&apikey=7fe042bd`, {
-        
+    const response = await fetch(`${herokuapp}https://www.fruityvice.com/api/fruit/all`, {
+        // http://www.omdbapi.com/?i=tt3896198&apikey=70a8a290
+        //`https://imdb8.p.rapidapi.com/v2/search-advance?country=US&language=en-US`
+//https://api.watchmode.com/v1/search/?apiKey=${apiKey}&search_field=imdb_type&search_value=movie`
+// "http://www.omdbapi.com/?i=tt3896198&apikey=70a8a290" // const apiKey = '12gPXD3y5W8GmRalSdtl39fpcs2FkWpQsjrvuoHv'
+/* 'https://imdb8.p.rapidapi.com/auto-complete?q=game%20of%20thr' 
+'x-rapidapi-key': 'd952f44eb9msh7fbea79d6651eb9p1def65jsne66ea67a9a1f',
+'x-rapidapi-host': 'imdb8.p.rapidapi.com',
+*/
         headers: {
             'Content-Type': 'application/json; charset=UTF-8',
         }
@@ -53,6 +60,25 @@ async function alertResponse(response) {
         alert("The request returned a status other than 200 OK: " + response.status);
     }
 }
+// async function testRequest() {
+// const url = 'https://online-movie-database.p.rapidapi.com/v2/search?searchTerm=tom%10cruise&type=NAME&first=20&country=US&language=en-US';
+// const options = {
+// 	method: 'GET',
+// 	headers: {
+// 		'x-rapidapi-key': 'd952f44eb9msh7fbea79d6651eb9p1def65jsne66ea67a9a1f',
+// 		'x-rapidapi-host': 'online-movie-database.p.rapidapi.com'
+// 	}
+// };
+
+// try {
+// 	const response = await fetch(url, options);
+// 	const result = await response.json();
+// 	console.log(result);
+// } catch (error) {
+// 	console.error(error);
+// }
+
+// }
 </script>
 </body>
 </html>
