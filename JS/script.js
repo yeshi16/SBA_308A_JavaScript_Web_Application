@@ -71,7 +71,7 @@ async function fruitList() {
             const header = document.createElement('h2')
             header.classList.add("accordion-header")
             const butn = document.createElement("button")
-            butn.classList.add("accordion-button", "collapsed", "fw-bold")
+            butn.classList.add("accordion-button", "collapsed", "fw-bold", 'text-primary')
             butn.setAttribute("type", "button");
             butn.setAttribute("data-bs-toggle", "collapse")
             butn.setAttribute("data-bs-target", `#flush-collapse${i}`)
@@ -86,9 +86,12 @@ async function fruitList() {
             textOutterDiv.setAttribute("data-bs-parent", "#accordionFlush")
 
             const textDiv = document.createElement("div")
-            textDiv.classList.add("accordion-body")
-            textDiv.textContent = `Fruit Family: ${element.family}\nFruit Order: ${element.order} \n
-    Fruit Genus: ${element.genus}`
+            textDiv.classList.add("accordion-body", 'text-primary')
+            textDiv.innerHTML = `
+            Family: ${element.family}<br>
+            Order: ${element.order}<br>
+            Genus: ${element.genus}<br>
+            `
 
             textOutterDiv.appendChild(textDiv)
             itemDiv.appendChild(header)

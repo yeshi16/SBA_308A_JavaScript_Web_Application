@@ -17,24 +17,15 @@
     <nav class="navbar navbar-expand-lg bg-primary-subtle">
       <div class="container-fluid ms-1">
         <a class="navbar-brand" href="#">
-          <img src="./image/Watchlogo1.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-bottom">
-          <span class="navbar-brand fs-1 ps-2 fw-bold text-primary" id="logoText">Watch</span>
+          <img src="./IMAGE/fruitNut.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-bottom">
+          <span class="navbar-brand fs-1 ps-2 fw-bold text-primary" id="logoText">NutriFruit</span>
         </a>
         <ul class="navbar-nav  me-auto mt-5 mb-lg-0 position-absolute start-50 translate-middle">
           <li class="nav-item">
-            <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-primary" aria-current="page" href="./index.html">Home</a>
           </li>
-          <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle text-primary" href="#" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Fruit List
-            </a>
-            <ul class="dropdown-menu" id="dropdown-menu">
-              <!-- <li><a class="dropdown-item text-primary" href="#">Action</a></li>
-              <li><a class="dropdown-item text-primary" href="#">Drama</a></li>
-              <li><a class="dropdown-item text-primary" href="#">Comedy</a></li>
-              <li><a class="dropdown-item text-primary" href="#">Romance</a></li> -->
-            </ul>
+          <li class="nav-item">
+            <a class="nav-link active text-primary" aria-current="page" href="./nutrition.html">Fruit List</a>
           </li>
       </div>
     </nav>
@@ -42,11 +33,11 @@
   
   <div id="mainMovie" class="container">
     <!-- introduction -->
-    <div class="card text-center">
+    <div class="card text-center text-primary">
         <div class="card-header">
           <!-- Featured -->
         </div>
-        <div class="card-body">
+        <div class="card-body text-primary">
           <h5 class="card-title">Botanical Classification and Nutritional Value of Fruits</h5>
           <p class="card-text">
             Each fruit in the list is represented by several descriptive 
@@ -65,7 +56,7 @@
            
             provided below is list of fruits that includes family, order and genus. 
             To filter by family, order or genus select below.  
-            To see nutrient list of a fruit select from dropdown.
+            To see nutrient list of a fruit select fruit list from menu.
             </p>
           <div class="d-grid gap-2 col-6 mx-auto">
             <!-- <a class="btn btn-primary" href="#" role="button">Link</a> -->
@@ -79,7 +70,7 @@
         </div>
       </div>
 
-      <div class="accordion accordion-flush" id="accordionFlush">
+      <div class="accordion accordion-flush text-primary" id="accordionFlush">
         <!-- <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -99,10 +90,12 @@
     <!-- <script type="module" src="./JS/script.js"></script> -->
     <script src="./JS/script.js"></script>
 </body>
-<footer>
-    Data provided by Fruityvice API (https://www.fruityvice.com/), 
-    a free API for retrieving information about various fruits. 
-    Powered by Fruityvice.
+<footer class="bootstrap-classes text-center text-primary">
+    <div class="container border border-primary-subtle p-3">
+        <pre>Data provided by Fruityvice API <span>(<a href="https://www.fruityvice.com/">https://www.fruityvice.com/</a>)</span>, 
+a free API for retrieving information about various fruits. 
+    Powered by Fruityvice.</pre>
+    </div>
 </footer>
   
 </html>
