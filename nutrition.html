@@ -1,102 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <title>Fruit Neutrition</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Fruit Neutrition</title>
 </head>
+
 <body>
     <!-- navbar -->
-  <div class="container-fluid mb-3">
-    <nav class="navbar navbar-expand-lg bg-primary-subtle">
-      <div class="container-fluid ms-1">
-        <a class="navbar-brand" href="./index.html">
-          <img src="./IMAGE/fruitNut.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-bottom">
-          <span class="navbar-brand fs-1 ps-2 fw-bold text-primary" id="logoText">NutriFruit</span>
-        </a>
-        <ul class="navbar-nav  me-auto mt-5 mb-lg-0 position-absolute start-50 translate-middle">
-          <li class="nav-item">
-            <a class="nav-link active text-primary" aria-current="page" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active text-primary" aria-current="page" href="./nutrition.html">Fruit List</a>
-          </li>
-      </div>
-    </nav>
-  </div>
+    <div class="container-fluid mb-3">
+        <nav class="navbar navbar-expand-lg bg-primary-subtle">
+            <div class="container-fluid ms-1">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./IMAGE/fruitNut.png" alt="Logo" width="50" height="50"
+                        class="d-inline-block align-text-bottom">
+                    <span class="navbar-brand fs-1 ps-2 fw-bold text-primary" id="logoText">NutriFruit</span>
+                </a>
+                <ul class="navbar-nav  me-auto mt-5 mb-lg-0 position-absolute start-50 translate-middle">
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-primary" aria-current="page" href="./nutrition.html">Fruit
+                            List</a>
+                    </li>
+            </div>
+        </nav>
+    </div>
 
-  <div id="mainMovie" class="container">
-    <!-- introduction -->
-    <div class="card text-center text-primary">
-        <div class="card-header">
-          <!-- Featured -->
+    <div id="mainMovie" class="container">
+        <!-- introduction -->
+        <div class="card text-center text-primary">
+            <div class="card-header">
+                <!-- Featured -->
+            </div>
+            <div class="card-body text-primary">
+                <h5 class="card-title">Botanical Classification and Nutritional Value of Fruits</h5>
+                <p class="card-text">
+                    Nutritional information for fruits is essential for understanding their health benefits.
+                    Fruits are generally low in calories, making them an
+                    excellent choice for those looking to manage their weight.
+                    They contain varying amounts of fat, usually in minimal
+                    quantities, which helps maintain a healthy diet. Sugar content in fruits,
+                    primarily in the form of natural sugars like fructose, provides a quick source of energy.
+                    Carbohydrates in fruits are also an important energy source, aiding in proper body function.
+                    Additionally, fruits are a valuable source of protein, which is crucial for muscle repair and
+                    growth.
+                    Together, these nutritional components make fruits a vital part of a balanced diet,
+                    contributing to overall health and wellness.
+                    To see nutrient list of a fruit select from dropdown.
+                </p>
+
+            </div>
+            <div class="card-footer text-body-secondary fw-bold">
+                <!-- Fruit List -->
+            </div>
         </div>
-        <div class="card-body text-primary">
-          <h5 class="card-title">Botanical Classification and Nutritional Value of Fruits</h5>
-          <p class="card-text">
-            Nutritional information for fruits is essential for understanding their health benefits. 
-            Fruits are generally low in calories, making them an 
-            excellent choice for those looking to manage their weight. 
-            They contain varying amounts of fat, usually in minimal 
-            quantities, which helps maintain a healthy diet. Sugar content in fruits, 
-            primarily in the form of natural sugars like fructose, provides a quick source of energy. 
-            Carbohydrates in fruits are also an important energy source, aiding in proper body function. 
-            Additionally, fruits are a valuable source of protein, which is crucial for muscle repair and growth. 
-            Together, these nutritional components make fruits a vital part of a balanced diet, 
-            contributing to overall health and wellness.
-            To see nutrient list of a fruit select from dropdown.
-            </p>
-          
-        </div>
-        <div class="card-footer text-body-secondary fw-bold">
-            <!-- Fruit List -->
-          </div>
+
+        <!-- dropdown -->
+        <h3 class="w-100 text-center mt-5 text-primary">Select a Fruit</h3>
+
+        <div class="btn-group d-grid gap-2 col-6 mx-auto pt-1 pb-5">
+            <button type="button" class="btn btn-primary btn-lg  dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Get Fruit Nutritions:
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" id="dropdown-menu">
+            </ul>
         </div>
 
-     <!-- dropdown -->
-     <h3 class="w-100 text-center mt-5 text-primary">Select a Fruit</h3>
-
-    <!-- <select id="fruitSelect" style="width: 300px;" class="form-select form-select-lg my-1 mx-auto" aria-label="form-select-lg">
-        <option value="placeholder" selected> Selcet Fruit:</option>
-    </select>
-    <div class="d-flex">
-        <button id="getFavouritesBtn" class="btn btn-success mx-auto mb-5">
-            Get Nutrition
-        </button>
-    </div> -->
-
-    <div class="btn-group d-grid gap-2 col-6 mx-auto pt-1 pb-5">
-        <button type="button" class="btn btn-primary btn-lg  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        Get Fruit Nutritions:
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end" id="dropdown-menu">
-          <!-- <li><button class="dropdown-item" type="button">Action</button></li>
-           <li><a class="dropdown-item text-primary" href="#">Drama</a></li> -->
-        </ul>
-      </div>
-
-      <!-- card -->
-      <div id="fruitCard" class="card border-primary mb-3 text-center d-grid gap-2 col-6 mx-auto " style="max-width: 18rem;">
-        <!-- <div class="card-header bg-transparent border-success">Header</div>
-        <div class="card-body text-success">
-          <h5 class="card-title">Success card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div> -->
-        <div class="card-footer bg-transparent border-primary"></div>
-      </div>
+        <!-- card -->
+        <div id="fruitCard" class="card border-primary mb-3 text-center d-grid gap-2 col-6 mx-auto "
+            style="max-width: 18rem;">
+            <div class="card-footer bg-transparent border-primary"></div>
+        </div>
 
     </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <!-- <script type="module" src="./JS/script.js"></script> -->
-  <script src="./JS/Nutrition.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./JS/Nutrition.js"></script>
 </body>
 <footer class="bootstrap-classes text-center text-primary">
     <div class="container border border-primary-subtle p-3">
@@ -105,4 +96,5 @@ a free API for retrieving information about various fruits.
     Powered by Fruityvice.</pre>
     </div>
 </footer>
+
 </html>
